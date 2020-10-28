@@ -1,0 +1,81 @@
+.overlay
+ position: fixed
+ display: none
+ top: 0
+ width: 100%
+ height: 100%
+ z-index: 3
+ background-color: rgba(0,0,0,.4) 
+.popup
+ position: fixed
+ left: 50%
+ width: 752px
+ top: 100px
+ transform: translateX(-50%)
+ 
+ &-close
+  position: absolute
+  right: -20px
+  top: -30px
+  font-size: 35px
+  color: #fff
+  font-weight: 300
+  cursor: pointer
+ &-title
+  display: block
+  width: 100%
+  min-height: 71px
+  margin: 0
+  background-color: #ff9d00
+  color: #fff
+  font-size: 21px
+  font-weight: 400
+  text-transform: uppercase
+  text-align: center
+  padding-top: 23px
+ &-form
+  background: url("../img/goods/bg-form.jpg") center no-repeat
+  background-size: cover
+  padding: 37px 88px 50px 88px
+  color: #fff
+  &-header
+   padding: 0
+   font-size: 30px
+   font-weight: 400
+   line-height: 27px
+   text-align: center
+   span
+    font-size: 24px
+  &__label
+   display: block
+   margin-top: 23px
+   font-size: 20px
+   font-weight: 300 
+  &__input
+   width: 365px
+   height: 56px
+   margin-top: 17px
+   border-radius: 4px
+   border: none
+   padding-left: 18px
+  &__btn
+
+   width: 180px
+   height: 56px
+   font-size: 15px
+   font-weight: 400 
+   color: $text-color-ligth
+   border: none
+   background-color: $active-color
+   padding: 13px 22px
+   border-radius: 5px
+   margin-left: 16px
+   &:hover
+    background-color: lighten($active-color, 5)
+    cursor: pointer
+  &__note
+   font-size: 14px
+   font-weight: 300
+   margin-top: 9px
+   text-align: center
+

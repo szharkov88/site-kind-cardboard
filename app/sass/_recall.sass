@@ -1,0 +1,48 @@
+.recall
+ position: relative
+ padding-top: 64px
+ padding-bottom: 69px
+ text-align: center   
+ background: #373737 url(../img/bc-goods.jpg) center no-repeat 
+ background-size: cover
+ color: $text-color-ligth 
+ z-index: 1
+ &::before
+  content: ''
+  display: block 
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.6)
+  z-index: -1
+ &__title
+  font-size: 32px
+  font-weight: 400
+  color: $text-color-ligth
+  &-little
+   font-size: 26px
+ &__main-title
+  margin-bottom: 17px
+  margin-top: 32px   
+  font-size: 20px
+  font-weight: 300
+  color: $text-color-ligth
+ &__input
+  width: 365px
+  height: 56px
+  padding-left: 120px
+  font-size: 14px
+  font-weight: 300
+  
+
+.form-recall
+ display: flex
+ flex-direction: column
+ align-items: center
+.recall-button
+ margin-top: 12px
+ margin-bottom: 9px
+ width: 180px
+ height: 56px   

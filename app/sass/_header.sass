@@ -1,0 +1,50 @@
+.header
+ background-color: #fff
+ padding-top: 70px
+ padding-bottom: 15px
+ &-contacts
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+  &__phone
+   font-size: 22px
+   margin-right: 13px
+   font-weight: 400
+   &-2
+    margin-right: 27px
+   &:first-child
+    border-right: 1px solid #cfcfd0
+    padding-right: 13px
+
+  &__button
+
+   font-size: 14px
+   font-weight: 400
+   color: $text-color-ligth
+   border: none
+   background-color: $active-color
+   padding: 13px 22px
+   border-radius: 5px
+   &:hover
+    background-color: lighten($active-color, 5)
+    cursor: pointer
+   img
+    vertical-align: middle
+@keyframes move
+ from
+  opacity: 0
+  margin-bottom: -100px
+  transform: rotateY(90deg)
+ to
+  opacity: 1
+  margin-bottom: 0 
+  
+
+.chel
+ animation-name: move
+ animation-delay: 0.4s
+ animation-duration: 1s
+
+@media (max-width: 768px)
+ padding-top: 10px
